@@ -6,15 +6,16 @@ Angular Material still lacks some components. This project aims to bring those m
 
 
 How to use this library in your application.
-1.	Locate this script in your HTML document.
+
+1. Locate this script in your HTML document.
 ```html
 <script src="/js/directivelibrary.js"></script>
 ```
-2.	Some components require custom CSS so import the directive_library.css
+2. Some components require custom CSS so import the directive_library.css
 ```html 
 <link rel="stylesheet" href="/css/directive_library.css">
 ```
-3.	Add the 'directivelibrary' module to your application.
+3. Add the 'directivelibrary' module to your application.
 
 ### Background banner
  This is a simple directive where the background banner can be used with a custom color and given a height. This is purely for aesthetics and conforms with the material design guidelines. 
