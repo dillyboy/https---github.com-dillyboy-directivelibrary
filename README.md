@@ -7,15 +7,15 @@ Angular Material still lacks some components. This project aims to bring those m
 
 How to use this library in your application.
 
-1. Locate this script in your HTML document.
+* Locate this script in your HTML document.
 ```html
 <script src="/js/directivelibrary.js"></script>
 ```
-2. Some components require custom CSS so import the directive_library.css
+* Some components require custom CSS so import the directive_library.css
 ```html 
 <link rel="stylesheet" href="/css/directive_library.css">
 ```
-3. Add the 'directivelibrary' module to your application.
+* Add the 'directivelibrary' module to your application.
 
 ### Background banner
  This is a simple directive where the background banner can be used with a custom color and given a height. This is purely for aesthetics and conforms with the material design guidelines. 
@@ -36,11 +36,11 @@ To leave an empty space in a row use
 
 ### Date Picker
   
-  This is an additional date-picker a developer may use if they are not satisfied with the  date-picker directive offered by angular material. After a user picks a date the value will be contained in the model attribute.
-  
-  ```html
-  <md-date-picker model="content.date" label="Pick a date"/>
-  ```
+This is an additional date-picker a developer may use if they are not satisfied with the  date-picker directive offered by angular material. After a user picks a date the value will be contained in the model attribute.
+
+```html
+<md-date-picker model="content.date" label="Pick a date"/>
+```
 
 ### File uploader
 
@@ -56,14 +56,14 @@ The file uploader helps users to upload pictures or documents to use in the appl
 ```
   
 Don't forget to initialize and array before using this directive.
-  ```js
-    $scope.content = {};
-    $scope.content.documents = []
-  ```
+```js
+$scope.content = {};
+$scope.content.documents = []
+```
   
 ### Rating Stars
   
-  A developer can use this directive to get user reviews.
+A developer can use this directive to get user reviews.
   
 * The ng-model equivalent of this directive is called ‘rating’ and the initial rating can be changed with the scope in the respective script file. 
 * The read-only values can be set to true or false. 
@@ -88,19 +88,19 @@ This directive is useful when there is already an image url however this image d
  
 ### Single Click
  
- This directive fires an event similar to an ng-click however it has a delay of 300 milliseconds. This is ideal to use when there is a ng-double click (ng-dblclick) event so that both methods will not be fired rather than using an ng-click.
+This directive fires an event similar to an ng-click however it has a delay of 300 milliseconds. This is ideal to use when there is a ng-double click (ng-dblclick) event so that both methods will not be fired rather than using an ng-click.
  
 ```html
 <div sglclick="delayedAction()">
 </div>
 ```
  
- ### Right-click
+### Right-click
  
- Simply write a event which will be fired if the user presses right-click.
+Simply write a event which will be fired if the user presses right-click.
 ```html
- <div ng-right-click="openButtonProperties()">
- </div>
+<div ng-right-click="openButtonProperties()">
+</div>
 ```
 
 ### Notifications
@@ -113,15 +113,15 @@ By default the notifications service toast will be on the bottom right.
 * The second is if it is a success or error. This will change the color of the toast accordingly. 
 * The third parameter is an optional one to contain the duration of the toast. The default time period is 2000 milliseconds.
 
- ```js
- notifications.toast("This is a success toast", "success", 3000);
- ```
+```js
+notifications.toast("This is a success toast", "success", 3000);
+```
 ##### Alert Dialog
  
- This is a Material Design alert.
-  ```js
- notifications.alertDialog("Alert Title", "Alert Message");
- ```
+This is a Material Design alert.
+```js
+notifications.alertDialog("Alert Title", "Alert Message");
+```
  
 ##### Content Loader
   
@@ -139,10 +139,10 @@ The directivelibrary also contains services to improve the UI features. The 'uiI
 ```js
 $scope.array  = uiInitilize.insertIndex($scope.array);
 
- //This holds the UI logic for the collapse cards
- $scope.toggles = {};
- $scope.toggleOne = function($index)
- {	
+//This holds the UI logic for the collapse cards
+$scope.toggles = {};
+$scope.toggleOne = function($index)
+{	
 	$scope.toggles = uiInitilize.openOne($scope.array, $index);
- }
+}
 ```
