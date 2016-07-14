@@ -1,6 +1,8 @@
 # Directive Library Guide
 
-Angular Material still lacks some components. This project aims to bring those missing components. The directive library is a JavaScript file which contains custom directives that can be used easily by any developer using the DuoWorld Developer Portal. 
+Angular Material still lacks some UI components. This project aims to bring those missing components. The directive library is a JavaScript file which contains custom directives that can be used easily by any developer using the DuoWorld Developer Portal. 
+
+Note - The Dependancies for this library include the uimicrokernel.js (form the duoworld.com developer platform) which is used in the File-uploader directive and also angularMoment which is already included in the directivelibrary in itself.
  
 (last build: 24-06-2016)
 
@@ -24,7 +26,7 @@ How to use this library in your application.
 ```
 ### Section Title
   
-This is a directive which is derived form the  [directivelibrary.js](http://duoworld.com/js/directivelibrary.js) and to use this directive the 'directivelibrary' module should be injected into your angular application module.
+Give a section title for a row
   
 ```html
 <section-title title="Account Details"></section-title>
