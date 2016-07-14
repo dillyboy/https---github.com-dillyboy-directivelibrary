@@ -19,9 +19,9 @@ How to use this library in your application.
 
 ### Background banner
  This is a simple directive where the background banner can be used with a custom color and given a height. This is purely for aesthetics and conforms with the material design guidelines. 
-  ```html
-  <md-background-banner color="#004682" height="300px"> </md-background-banner>
-  ```
+```html
+<md-background-banner color="#004682" height="300px"> </md-background-banner>
+```
 ### Section Title
   
 This is a directive which is derived form the  [directivelibrary.js](http://duoworld.com/js/directivelibrary.js) and to use this directive the 'directivelibrary' module should be injected into your angular application module.
