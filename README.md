@@ -1,6 +1,6 @@
 # Directive Library Guide
 
- Angular Material still lacks some components. This project aims to bring those missing components. The directive library is a JavaScript file which contains custom directives that can be used easily by any developer using the DuoWorld Developer Portal. 
+Angular Material still lacks some components. This project aims to bring those missing components. The directive library is a JavaScript file which contains custom directives that can be used easily by any developer using the DuoWorld Developer Portal. 
  
 (last build: 24-06-2016)
 
@@ -16,14 +16,14 @@ How to use this library in your application.
 ```
 3.	Add the 'directivelibrary' module to your application.
 
-  ### Background banner
+### Background banner
  This is a simple directive where the background banner can be used with a custom color and given a height. This is purely for aesthetics and conforms with the material design guidelines. 
   ```html
   <md-background-banner color="#004682" height="300px"> </md-background-banner>
   ```
-  ### Section Title
+### Section Title
   
-  This is a directive which is derived form the  [directivelibrary.js](http://duoworld.com/js/directivelibrary.js) and to use this directive the 'directivelibrary' module should be injected into your angular application module.
+This is a directive which is derived form the  [directivelibrary.js](http://duoworld.com/js/directivelibrary.js) and to use this directive the 'directivelibrary' module should be injected into your angular application module.
   
 ```html
 <section-title title="Account Details"></section-title>
@@ -33,7 +33,7 @@ To leave an empty space in a row use
 <section-title hide-sm hide-xs></section-title>
 ```
 
-  ### Date Picker
+### Date Picker
   
   This is an additional date-picker a developer may use if they are not satisfied with the  date-picker directive offered by angular material. After a user picks a date the value will be contained in the model attribute.
   
@@ -49,18 +49,18 @@ The file uploader helps users to upload pictures or documents to use in the appl
 * Change the label to suit the user interface.
 
 
-  ```html
+```html
 <file-up-loader os-class="testupload" label="Add here" model="content.documents" class="md-block" flex-gt-sm>
 </file-up-loader>
-  ```
+```
   
-  Don't forget to initialize and array before using this directive.
+Don't forget to initialize and array before using this directive.
   ```js
     $scope.content = {};
     $scope.content.documents = []
   ```
   
-  ### Rating Stars
+### Rating Stars
   
   A developer can use this directive to get user reviews.
   
@@ -71,28 +71,28 @@ The file uploader helps users to upload pictures or documents to use in the appl
 * Mouse-hover events can also be written if necessary.
 
 
-  ```html
+```html
 <div star-rating rating="starRating1" read-only="false" max-rating="5" click="click1(param)" mouse-hover="mouseHover1(param)" mouse-leave="mouseLeave1(param)">
 </div>
-  ```
+```
   
   
 ### Image Not Found
 
 This directive is useful when there is already an image url however this image does not exist in the server. simply add the err-src attribute and give an url of a  default picture.
 
- ```html
+```html
 <img ng-src="{{product.displayPicture}}" err-src="img/not_found.png"  alt=""/>
- ```
+```
  
- ### Single Click
+### Single Click
  
  This directive fires an event similar to an ng-click however it has a delay of 300 milliseconds. This is ideal to use when there is a ng-double click (ng-dblclick) event so that both methods will not be fired rather than using an ng-click.
  
-  ```html
+```html
 <div sglclick="delayedAction()">
 </div>
- ```
+```
  
  ### Right-click
  
@@ -115,14 +115,14 @@ By default the notifications service toast will be on the bottom right.
  ```js
  notifications.toast("This is a success toast", "success", 3000);
  ```
- ##### Alert Dialog
+##### Alert Dialog
  
  This is a Material Design alert.
   ```js
  notifications.alertDialog("Alert Title", "Alert Message");
  ```
  
-  ##### Content Loader
+##### Content Loader
   
 This is useful to notify the user when the content is being loaded to the UI.
 ```js
@@ -132,7 +132,7 @@ notifications.startLoading("Loading content, Please wait...");
 notifications.finishLoading();
  ```
  
- ### UI Initilize
+### UI Initilize
 The directivelibrary also contains services to improve the UI features. The 'uiInitilize' service can be injected to the controller in a specific instance if the developer wants to make a material design list-view which has md-virtual-repeat. Please note that this might not make sense if you don't have the collapse cards list view html.
 
 ```js
@@ -145,10 +145,3 @@ $scope.array  = uiInitilize.insertIndex($scope.array);
 	$scope.toggles = uiInitilize.openOne($scope.array, $index);
  }
 ```
-
- 
- 
-  
- 
-  
-  
