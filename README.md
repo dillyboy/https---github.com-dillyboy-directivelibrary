@@ -47,7 +47,7 @@ This is an additional date-picker a developer may use if they are not satisfied 
 ### File uploader
 
 The file uploader helps users to upload pictures or documents to use in the applications. 
-* An os-class name should be specified, this is the name of the folder which the file/s will get saved. After aa user add the file/s to the file uploader and clicks upload an array of urls will be returned to the application which will be contained in the model. This array contains direct links to the uploaded pictures or documents which were uploaded.
+* An os-class name should be specified, this is the name of the folder which the file/s will get saved. After a user add the file/s to the file uploader and clicks upload an array of urls will be returned to the application which will be contained in the model. This array contains direct links to the uploaded pictures or documents which were uploaded.
 
 * Change the label to suit the user interface.
 
